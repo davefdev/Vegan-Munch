@@ -57,27 +57,27 @@ const Navbar = () => {
             </li>
             <li className="text-xl py-4 flex">
               <TbTruckDelivery size={27} className="mr-4" />
-              Orders
+              Faves
             </li>
             <li className="text-xl py-4 flex">
               <TbTruckDelivery size={27} className="mr-4" />
-              Orders
+              Wallet
             </li>
             <li className="text-xl py-4 flex">
               <TbTruckDelivery size={27} className="mr-4" />
-              Orders
+              Help
             </li>
             <li className="text-xl py-4 flex">
               <TbTruckDelivery size={27} className="mr-4" />
-              Orders
+              Promotions
             </li>
             <li className="text-xl py-4 flex">
               <TbTruckDelivery size={27} className="mr-4" />
-              Orders
+              Best
             </li>
             <li className="text-xl py-4 flex">
               <TbTruckDelivery size={27} className="mr-4" />
-              Orders
+              Invite friends
             </li>
         
           </ul>
