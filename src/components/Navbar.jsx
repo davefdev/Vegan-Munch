@@ -1,7 +1,7 @@
 import React from "react";
-import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
 import { BsFillCartFill } from "react-icons/bs";
-
+import { TbTruckDelivery } from "react-icons/tb";
 const Navbar = () => {
   return (
     <div className="max-w-[1640x] mx-auto flex justify-between items-center p-5">
@@ -34,6 +34,55 @@ const Navbar = () => {
         <BsFillCartFill size={20} className="mr-2" />
         cart
       </button>
+
+      {/*Mob menu*/}
+
+      {/*Overlay menu*/}
+      <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+
+      {/*Side drawer menu*/}
+      <div className="fixed top-0 left-0 w-[20rem] h-screen bg-white z-10 duration-300">
+        <AiOutlineClose
+          size={30}
+          className="absolute right-4 top-4 cursor-pointer"
+        />
+        <h2 className="text-2xl p-4">
+          Vegan<span className="font-bold">Munch</span>
+        </h2>
+        <nav>
+          <ul className="flex flex-col p-4 text-gray-800">
+            <li className="text-xl py-4 flex">
+              <TbTruckDelivery size={27} className="mr-4" />
+              Orders
+            </li>
+            <li className="text-xl py-4 flex">
+              <TbTruckDelivery size={27} className="mr-4" />
+              Orders
+            </li>
+            <li className="text-xl py-4 flex">
+              <TbTruckDelivery size={27} className="mr-4" />
+              Orders
+            </li>
+            <li className="text-xl py-4 flex">
+              <TbTruckDelivery size={27} className="mr-4" />
+              Orders
+            </li>
+            <li className="text-xl py-4 flex">
+              <TbTruckDelivery size={27} className="mr-4" />
+              Orders
+            </li>
+            <li className="text-xl py-4 flex">
+              <TbTruckDelivery size={27} className="mr-4" />
+              Orders
+            </li>
+            <li className="text-xl py-4 flex">
+              <TbTruckDelivery size={27} className="mr-4" />
+              Orders
+            </li>
+        
+          </ul>
+        </nav>
+      </div>
     </div>
   );
 };
