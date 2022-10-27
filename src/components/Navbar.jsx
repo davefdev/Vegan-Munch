@@ -1,12 +1,23 @@
-import React from "react";
-import { AiOutlineMenu, AiOutlineSearch, AiOutlineClose } from "react-icons/ai";
-import { BsFillCartFill } from "react-icons/bs";
+import React, { useState } from "react";
+import {
+  AiOutlineMenu,
+  AiOutlineSearch,
+  AiOutlineClose,
+  AiFillTag,
+} from "react-icons/ai";
+import { BsFillCartFill, BsFillSaveFill } from "react-icons/bs";
 import { TbTruckDelivery } from "react-icons/tb";
+import { FaUserFriends, FaWallet } from "react-icons/fa";
+import { MdFavorite, MdHelp } from "react-icons/md";
+
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
   return (
     <div className="max-w-[1640x] mx-auto flex justify-between items-center p-5">
+      {/*Left*/}
       <div className="flex items-center">
-        <div className="cursor-pointer">
+        <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <AiOutlineMenu size={32} />
         </div>
         <h1 className="text-2xl sm:text-3xl lg:text-4xl  px-2">
@@ -19,7 +30,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/*search input*/}
+      {/*Search input*/}
       <div className="bg-gray-300 flex items-center px-2 rounded-full w-[200px] sm:w-[400px] lg:w-[500px]">
         <AiOutlineSearch />
         <input
@@ -38,11 +49,22 @@ const Navbar = () => {
       {/*Mob menu*/}
 
       {/*Overlay menu*/}
-      <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+      {nav ? (
+        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+      ) : (
+        ""
+      )}
 
       {/*Side drawer menu*/}
-      <div className="fixed top-0 left-0 w-[20rem] h-screen bg-white z-10 duration-300">
+      <div
+        className={
+          nav
+            ? "fixed top-0 left-0 w-[20rem] h-screen bg-white z-10 duration-300"
+            : "fixed top-0 left-[-100%] w-[20rem] h-screen bg-white z-10 duration-300"
+        }
+      >
         <AiOutlineClose
+          onClick={() => setNav(!nav)}
           size={30}
           className="absolute right-4 top-4 cursor-pointer"
         />
@@ -56,30 +78,29 @@ const Navbar = () => {
               Orders
             </li>
             <li className="text-xl py-4 flex">
-              <TbTruckDelivery size={27} className="mr-4" />
+              <MdFavorite size={27} className="mr-4" />
               Faves
             </li>
             <li className="text-xl py-4 flex">
-              <TbTruckDelivery size={27} className="mr-4" />
+              <FaWallet size={27} className="mr-4" />
               Wallet
             </li>
             <li className="text-xl py-4 flex">
-              <TbTruckDelivery size={27} className="mr-4" />
+              <MdHelp size={27} className="mr-4" />
               Help
             </li>
             <li className="text-xl py-4 flex">
-              <TbTruckDelivery size={27} className="mr-4" />
+              <AiFillTag size={27} className="mr-4" />
               Promotions
             </li>
             <li className="text-xl py-4 flex">
-              <TbTruckDelivery size={27} className="mr-4" />
+              <BsFillSaveFill size={27} className="mr-4" />
               Best
             </li>
             <li className="text-xl py-4 flex">
-              <TbTruckDelivery size={27} className="mr-4" />
+              <FaUserFriends size={27} className="mr-4" />
               Invite friends
             </li>
-        
           </ul>
         </nav>
       </div>
