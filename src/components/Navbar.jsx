@@ -20,7 +20,7 @@ const Navbar = () => {
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <AiOutlineMenu size={32} />
         </div>
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl  px-2">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl px-2">
           Vegan <span className="font-bold">Munch</span>
         </h1>
 
