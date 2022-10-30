@@ -2,10 +2,10 @@ import React from "react";
 
 const HeadlineCards = () => {
   return (
-    <div className="max-w-[1640px] mx-auto p-4 md:grid grid-cols-3 gap-5  ">
-
+    <div className="max-w-[1640px] mx-auto p-4 md:grid grid-cols-3 gap-5">
+      
       {/*Card*/}
-      <div className="rounded-2xl relative  ">
+      <div className="rounded-2xl relative my-1 ">
         {/*Overlay*/}
         <div className="absolute w-full h-full bg-black/40 rounded-2xl text-white">
           <p className="font-bold text-2xl px-2 pt-4">
@@ -24,7 +24,7 @@ const HeadlineCards = () => {
       </div>
 
       {/*Card*/}
-      <div className="rounded-2xl relative">
+      <div className="rounded-2xl relative my-1">
         {/*Overlay*/}
         <div className="absolute w-full h-full bg-black/40 rounded-2xl text-white">
           <p className="font-bold text-2xl px-2 pt-4">New deals</p>
@@ -41,7 +41,7 @@ const HeadlineCards = () => {
       </div>
 
       {/*Card*/}
-      <div className="rounded-2xl relative">
+      <div className="rounded-2xl relative my-1">
         {/*Overlay*/}
         <div className="absolute w-full h-full bg-black/40 rounded-2xl text-white">
           <p className="font-bold text-2xl px-2 pt-4">Fresh, local produce</p>
