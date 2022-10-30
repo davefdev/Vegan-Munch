@@ -52,19 +52,19 @@ export const data = [
 export const categories = [
   {
     id: 1,
-    name: "pizza",
+    name: "Pizza",
     image:
       "https://images.pexels.com/photos/3607284/pexels-photo-3607284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 2,
-    name: "hotdogs",
+    name: "Hotdogs",
     image:
       "https://www.easycheesyvegetarian.com/wp-content/uploads/2018/05/Homemade-vegan-hot-dogs-3-500x433.jpg",
   },
   {
     id: 3,
-    name: "pasta",
+    name: "Pasta",
     image:
       "https://images.pexels.com/photos/12035802/pexels-photo-12035802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
@@ -82,7 +82,7 @@ export const categories = [
   },
   {
     id: 6,
-    name: "dips",
+    name: "Dips",
     image:
       "https://images.pexels.com/photos/5852249/pexels-photo-5852249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
