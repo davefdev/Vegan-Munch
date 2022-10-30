@@ -3,11 +3,14 @@ import React from "react";
 const HeadlineCards = () => {
   return (
     <div className="max-w-[1640px] mx-auto p-4 md:grid grid-cols-3 gap-5  ">
+
       {/*Card*/}
-      <div className="rounded-2xl relative">
+      <div className="rounded-2xl relative  ">
         {/*Overlay*/}
         <div className="absolute w-full h-full bg-black/40 rounded-2xl text-white">
-          <p className="font-bold text-2xl px-2 pt-4">No animal products used</p>
+          <p className="font-bold text-2xl px-2 pt-4">
+            No animal products used
+          </p>
           <p className="px-2">Whatsoever!</p>
           <button className="border-white bg-white text-black mx-2 absolute bottom-4">
             Order now
@@ -53,7 +56,6 @@ const HeadlineCards = () => {
           alt="hummus"
         />
       </div>
-     
     </div>
   );
 };
